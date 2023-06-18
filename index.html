@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Hina+Mincho&family=Righteous&family=Roboto+Slab:wght@300&family=Ubuntu&display=swap');
+
+    body {
+     background: #6554AF;
+    }
+
+    .container.text-center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+h1{
+  margin-left: 8px;
+}
+.top-left {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 10px;
+        font-weight: bold;
+        font-size: 30px;
+         font-family: 'Hina Mincho', serif;
+         color: white;
+         letter-spacing: 2px
+        }
+
+  .center-texth1 {
+      text-align: center;
+       font-family: 'Hina Mincho', serif;
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
+.container.text-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 41vh; /* Adjust the height value as needed */
+  }
+
+  </style>
+
+  <title>Text to speech</title>
+</head>
+  <h1 class="top-left">L<img class="letter-a" src="white.png"/>NGSYS</h1>
+<body class="text-white">
+   <div class="center-texth1">
+    <h1>TEXT TO SPEECH</h1>
+  </div>
+
+ <div class="container text-center">
+    <img src="mic.gif" alt="Example GIF">
+  </div>
+
+  <div class="container text-center">
+    
+    <div class="row">
+      <div class="col-md-6 mx-auto">
+        <form class="mb-5">
+          <div class="form-group">
+            <textarea name="" id="text-input" class="form-control form-control-lg" placeholder="Type Text you want to Convert to Speech"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="rate">Rate</label>
+            <div id="rate-value" class="badge badge-primary float-right">1</div>
+            <input type="range" id="rate" class="custom-range" min="0.5" max="2" value="1" step="0.1">
+          </div>
+          <div class="form-group">
+            <label for="pitch">Pitch</label>
+            <div id="pitch-value" class="badge badge-primary float-right">1</div>
+            <input type="range" id="pitch" class="custom-range" min="0" max="2" value="1" step="0.1">
+          </div>
+          <div class="form-group">
+            <select id="voice-select" class="form-control form-control-lg"></select>
+          </div>
+          <button class="btn btn-light btn-lg btn-block" style="background-color: #A436FB; color: white;"  >SPEAK</button>
+        </form> 
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>

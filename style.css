@@ -1,0 +1,36 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+background: #A436FB;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+#options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.option {
+  margin: 5px;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#nextBtn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #A436FB;
+    
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+ 
